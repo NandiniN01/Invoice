@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp"
+        app:cardMaxElevation="1dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"
+            android:layout_gravity="end"
+            android:layout_margin="6dp"
+            android:id="@+id/imgDelete"
+            android:adjustViewBounds="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/customers"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:adjustViewBounds="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Dekkati Prasad"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/customerName"
+                android:textColor="#CC000000"
+                android:fontFamily="@font/regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="8498039457"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:id="@+id/contactNo"
+                android:textColor="#CC000000"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="12-12-2022"
+                android:layout_gravity="center"
+                android:textSize="13sp"
+                android:includeFontPadding="false"
+                android:id="@+id/dueDate"
+                android:textColor="#FF9800"
+                android:fontFamily="@font/regular"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#c6c6c6"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Due:"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/holo_red_light"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="₹120.0/-"
+                    android:layout_marginStart="5dp"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                    android:id="@+id/pendingAmount"
+                    android:textColor="#4CAF50"
+                    android:includeFontPadding="false"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/bold"
+                    />
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

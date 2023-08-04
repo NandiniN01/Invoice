@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activities.EditActivity">
+
+    <include
+        layout="@layout/layout_bg"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_color"
+        app:title="Edit Profile"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/toolbar"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true"
+        android:layout_below="@id/toolbar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/placeholder"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:id="@+id/profileImage"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name:"
+                android:layout_gravity="start"
+                android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/txt_bg"
+                android:layout_marginTop="3dp"
+                android:hint="Enter"
+                android:id="@+id/inputFullName"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:inputType="textCapSentences"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business Name:"
+                android:layout_gravity="start"
+                android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/txt_bg"
+                android:layout_marginTop="3dp"
+                android:hint="Enter"
+                android:id="@+id/inputBusinessName"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:inputType="textCapSentences"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:layout_gravity="start"
+                android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/txt_bg"
+                android:layout_marginTop="3dp"
+                android:hint="Enter"
+                android:id="@+id/inputAddress"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:inputType="textMultiLine"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact No:"
+                android:layout_gravity="start"
+                android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/txt_bg"
+                android:layout_marginTop="3dp"
+                android:hint="Enter"
+                android:id="@+id/inputPhone"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:inputType="phone"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/semi_bold"
+                    android:text="Update"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                    android:textColor="@color/white"
+                    app:backgroundTint="#3F51B5"
+                    app:cornerRadius="8dp" />
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

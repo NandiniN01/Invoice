@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="1dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:elevation="4dp"
+            android:background="@drawable/txt_bg"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/delete" />
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="#3F51B5"
+                android:background="@drawable/edit_bg">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:padding="2dp"
+                    android:src="@drawable/stock_items" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/r1"
+                android:id="@+id/l1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/itemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:text="Item name of the product"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:text="₹104.00"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textSize="16sp" />
+
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/btnAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit_bg"
+                        android:backgroundTint="#E91E63"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="3dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="3dp"
+                        android:text="Add"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        tools:visibility="visible"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/cartLyt"
+                        android:visibility="gone"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:gravity="center"
+                            android:fontFamily="@font/regular"
+                            android:background="@drawable/edit_bg"
+                            android:minWidth="40dp"
+                            android:textColor="@color/black"
+                            app:drawableTint="@color/black"
+                            android:id="@+id/txtQuantity"
+                            app:drawableEndCompat="@drawable/down" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Update"
+                            android:textSize="11sp"
+                            android:background="@drawable/edit_bg"
+
+                            android:backgroundTint="@color/dark_color"
+                            android:textColor="@color/white"
+                            android:padding="4dp"
+                            android:layout_marginStart="4dp"
+                            android:fontFamily="@font/regular"
+                            android:id="@+id/btnUpdateCart"
+
+                           />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/close"
+                            android:layout_marginStart="5dp"
+                            android:id="@+id/closeCart"
+
+                            />
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:background="@drawable/edit_bg"-->
+<!--                android:backgroundTint="#E91E63"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                >-->
+
+<!--              -->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/lytCart"-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@drawable/edit_bg"-->
+<!--                    android:backgroundTint="#E91E63"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="24dp"-->
+<!--                        android:src="@drawable/minus"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:padding="3sp"-->
+<!--                        app:tint="@color/white"-->
+<!--                        android:id="@+id/btnMinus"-->
+<!--                        android:background="?selectableItemBackgroundBorderless"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="1"-->
+<!--                        android:textAppearance="@style/TextAppearance.AppCompat.Title"-->
+<!--                        android:gravity="center"-->
+<!--                        android:fontFamily="@font/bold"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:id="@+id/quantity"-->
+<!--                        />-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="24dp"-->
+<!--                        android:src="@drawable/plus"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:padding="3sp"-->
+<!--                        app:tint="@color/white"-->
+<!--                        android:id="@+id/btnPlus"-->
+<!--                        android:background="?selectableItemBackgroundBorderless"-->
+
+<!--                        />-->
+
+
+
+
+
+
+
+
+
+<!--                </LinearLayout>-->
+
+
+
+<!--            </LinearLayout>-->
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLyt"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_color"
+                android:id="@+id/toolbar"
+                app:title="@string/app_name"
+                app:navigationIcon="@drawable/menu"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                />
+
+            <ImageView
+                android:id="@+id/imgProfit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="14dp"
+                android:adjustViewBounds="true"
+                android:visibility="gone"
+                android:src="@drawable/profit" />
+        </RelativeLayout>
+
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_color"
+            app:tabTextAppearance="@style/TabTheme"
+            android:id="@+id/tabLyt"
+            android:layout_below="@id/r1"
+            app:tabTextColor="@color/white"
+            app:tabSelectedTextColor="#E91E63"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="scrollable"
+            app:tabIndicatorColor="@color/white"
+            >
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Sales"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stocks"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consumer Dues"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suppliers"
+                />
+
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <!--    <androidx.viewpager.widget.ViewPager-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:id="@+id/viewPager"-->
+        <!--        />-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frameContainer"
+            android:layout_below="@id/tabLyt"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation"
+        app:headerLayout="@layout/header_layout"
+        android:id="@+id/navigationView"
+        />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

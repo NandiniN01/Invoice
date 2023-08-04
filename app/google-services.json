@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "19792711206",
+    "project_id": "texttile-app-fe54f",
+    "storage_bucket": "texttile-app-fe54f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19792711206:android:fa8e8299eb9621fd2fe0e7",
+        "android_client_info": {
+          "package_name": "apps.develop.texttileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19792711206-gbeqi49ola2p27gmgqggoibho98oa2up.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByRNJucYPnxdVVN4Yq7HpPikl1MJToNgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19792711206-gbeqi49ola2p27gmgqggoibho98oa2up.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

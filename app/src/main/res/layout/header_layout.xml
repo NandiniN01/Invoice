@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ECECEC">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/placeholder"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/profileImage"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/profileImage"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="5dp"
+        android:padding="3dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Dekkati Prasad"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            android:id="@+id/username"
+            android:fontFamily="@font/semi_bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="prasad@gmail.com"
+            android:id="@+id/email"
+            android:fontFamily="@font/regular"
+            />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

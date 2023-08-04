@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="1dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:elevation="4dp"
+            android:background="@drawable/txt_bg"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/delete" />
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="#3F51B5"
+                android:background="@drawable/edit_bg">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:padding="2dp"
+                    android:src="@drawable/stock_items" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/r1"
+                android:id="@+id/l1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/itemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:text="Item name of the product"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/totalAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:text="₹104.00"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹10 for each"
+                        android:textSize="11sp"
+                        android:layout_marginStart="2dp"
+                        android:fontFamily="@font/regular"
+                        android:id="@+id/txtEachCost"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytCart"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/edit_bg"
+                android:backgroundTint="#E91E63"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:layout_alignParentBottom="true"
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/minus"
+                    android:layout_weight="1"
+                    android:padding="3sp"
+                    app:tint="@color/white"
+                    android:id="@+id/btnMinus"
+                    android:background="?selectableItemBackgroundBorderless"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:gravity="center"
+                    android:fontFamily="@font/bold"
+                    android:textColor="@color/white"
+                    android:id="@+id/quantity"
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/plus"
+                    android:layout_weight="1"
+                    android:padding="3sp"
+                    app:tint="@color/white"
+                    android:id="@+id/btnPlus"
+                    android:background="?selectableItemBackgroundBorderless"
+
+                    />
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp"
+        app:cardMaxElevation="1dp"
+        android:id="@+id/cardCustomer"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/notifications"
+                android:background="#e3e3e3"
+                app:riv_corner_radius="5dp"
+                android:padding="8dp"
+                android:layout_margin="5dp"
+                android:id="@+id/image"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/image"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:padding="5dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Due"
+                    android:textColor="@android:color/holo_red_light"
+                    android:fontFamily="@font/semi_bold"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="detiled text here!"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"
+                    android:id="@+id/customerDetailText"
+                    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp"
+        app:cardMaxElevation="1dp"
+        android:id="@+id/supplierCard"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/supplier"
+                android:background="#e3e3e3"
+                app:riv_corner_radius="5dp"
+                android:padding="8dp"
+                android:layout_margin="5dp"
+                android:id="@+id/image1"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/image1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Supplier Payment Due"
+                    android:textColor="@android:color/holo_red_light"
+                    android:fontFamily="@font/semi_bold"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="detiled text here!"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"
+                    android:id="@+id/supplierData"
+                    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp"
+        app:cardMaxElevation="1dp"
+        android:id="@+id/cardStock"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/stock_items"
+                android:background="#e3e3e3"
+                app:riv_corner_radius="5dp"
+                android:padding="8dp"
+                android:layout_margin="5dp"
+                android:id="@+id/image2"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/image2"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:padding="5dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stock Quantity Alert"
+                    android:textColor="@android:color/holo_red_light"
+                    android:fontFamily="@font/semi_bold"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="detiled text here!"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"
+                    android:id="@+id/stockText"
+                    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
